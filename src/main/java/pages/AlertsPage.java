@@ -1,45 +1,38 @@
 package pages;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.*;
 
-public class AlertsPage extends BasePage {
+import java.time.Duration;
+
+public class AlertsPage {
+    private final WebDriver driver;
 
     @FindBy(id = "alertButton")
     private WebElement alertButton;
 
-    @FindBy(id = "timerAlertButton")
-    private WebElement timerAlertButton;
-
-    @FindBy(id = "confirmButton")
-    private WebElement confirmButton;
-
-    @FindBy(id = "confirmResult")
-    private WebElement confirmResult;
-
     public AlertsPage(WebDriver driver) {
-        super(driver);
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+    }
+
+    public void open() {
+        driver.get("https://demoqa.com/alerts");
     }
 
     public void clickAlertButton() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(alertButton));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", alertButton);
         alertButton.click();
     }
 
-    public void clickTimerAlertButton() {
-        timerAlertButton.click();
-    }
-
-    public void clickConfirmButton() {
-        confirmButton.click();
-    }
-
-    public Alert getAlert() {
-        return driver.switchTo().alert();
-    }
-
-    public String getConfirmResultText() {
-        return confirmResult.getText();
+    public String getAlertTextAndAccept() {
+        Alert alert = driver.switchTo().alert();
+        String text = alert.getText();
+        alert.accept();
+        return text;
     }
 }

@@ -4,19 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6fa8642-0f89-41fd-8942-b7ac8dfeeb58" name="Changes" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/AlertsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/BrowserWindowsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ExceptionPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/FramesPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/AlertsTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/BrowserWindowsTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/ExceptionTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/FramesTests.java" afterDir="false" />
+    <list default="true" id="f6fa8642-0f89-41fd-8942-b7ac8dfeeb58" name="Changes" comment="add tests">
+      <change afterPath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/base/DriverSingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/managers/PageManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/AlertsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/BrowserWindowsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AlertsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/AlertsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BrowserWindowsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BrowserWindowsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ExceptionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ExceptionPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/FramesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/FramesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AlertsTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BrowserWindowsTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ExceptionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ExceptionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/FramesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/FramesTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,8 +67,13 @@
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.AlertsTest.executor": "Run",
     "TestNG.AlertsTests.executor": "Run",
+    "TestNG.BrowserWindowsTest.executor": "Run",
+    "TestNG.BrowserWindowsTests.executor": "Run",
+    "TestNG.ExceptionTests.executor": "Run",
     "TestNG.ExceptionTests.testHandleNoSuchElementException.executor": "Run",
+    "TestNG.FramesTests.executor": "Run",
     "git-widget-placeholder": "QAT-5893",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -77,7 +85,7 @@
   }
 }]]></component>
   <component name="RunManager" selected="TestNG.FramesTests">
-    <configuration name="AlertsTests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AlertsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-api-internship" />
       <extension name="coverage">
         <pattern>
@@ -86,7 +94,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.AlertsTests" />
+      <option name="MAIN_CLASS_NAME" value="tests.AlertsTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BrowserWindowsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="selenium-api-internship" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.BrowserWindowsTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -128,24 +153,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExceptionTests.testHandleNoSuchElementException" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="selenium-api-internship" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ExceptionTests" />
-      <option name="METHOD_NAME" value="testHandleNoSuchElementException" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FramesTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-api-internship" />
       <extension name="coverage">
@@ -167,9 +174,9 @@
       <list>
         <item itemvalue="TestNG.FramesTests" />
         <item itemvalue="TestNG.ExceptionTests" />
+        <item itemvalue="TestNG.BrowserWindowsTest" />
+        <item itemvalue="TestNG.AlertsTest" />
         <item itemvalue="TestNG.BrowserWindowsTests" />
-        <item itemvalue="TestNG.AlertsTests" />
-        <item itemvalue="TestNG.ExceptionTests.testHandleNoSuchElementException" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +197,8 @@
       <option name="presentableId" value="Default" />
       <updated>1744194691360</updated>
       <workItem from="1744194692417" duration="3419000" />
-      <workItem from="1744199826333" duration="555000" />
+      <workItem from="1744199826333" duration="1528000" />
+      <workItem from="1744204403302" duration="1141000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -200,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744195115563</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add tests">
+      <option name="closed" value="true" />
+      <created>1744200694325</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744200694325</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +235,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+    <MESSAGE value="add tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tests" />
   </component>
 </project>

@@ -1,15 +1,18 @@
 package pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 
 import java.util.List;
 
-public class ExceptionPage extends BasePage {
+public class ExceptionPage {
+    private final WebDriver driver;
 
     public ExceptionPage(WebDriver driver) {
-        super(driver);
+        this.driver = driver;
+    }
+
+    public void open() {
+        driver.get("https://demoqa.com/alerts"); // Можно любую страницу
     }
 
     public WebElement findMissingElementById(String id) {

@@ -1,12 +1,17 @@
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.By;
 
-public class FramesPage extends BasePage{
+public class FramesPage {
+    private final WebDriver driver;
 
     public FramesPage(WebDriver driver) {
-        super(driver);
+        this.driver = driver;
+    }
+
+    public void open() {
+        driver.get("https://demoqa.com/frames");
     }
 
     public String getTextFromFrame(String frameId) {

@@ -1,23 +1,33 @@
 package pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 
-public class BrowserWindowsPage extends BasePage {
+import java.util.Set;
+
+public class BrowserWindowsPage {
+    private final WebDriver driver;
 
     public BrowserWindowsPage(WebDriver driver) {
-        super(driver);
+        this.driver = driver;
+    }
+
+    public void open() {
+        driver.get("https://demoqa.com/browser-windows");
     }
 
     public void clickNewWindowButton() {
         driver.findElement(By.id("windowButton")).click();
     }
 
-    public String switchToNewWindowAndGetText(String mainWindowHandle) {
-        for (String handle : driver.getWindowHandles()) {
-            if (!handle.equals(mainWindowHandle)) {
+    public String switchToNewWindowAndGetText(String mainWindow) {
+        Set<String> allWindows = driver.getWindowHandles();
+        for (String handle : allWindows) {
+            if (!handle.equals(mainWindow)) {
                 driver.switchTo().window(handle);
-                return driver.findElement(By.tagName("body")).getText();
+                String text = driver.findElement(By.tagName("body")).getText();
+                driver.close(); // Закрыть вкладку
+                driver.switchTo().window(mainWindow); // Назад
+                return text;
             }
         }
         return null;
