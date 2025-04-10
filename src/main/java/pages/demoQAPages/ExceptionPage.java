@@ -11,8 +11,8 @@ public class ExceptionPage extends BasePage {
 
     private final String URL = "https://demoqa.com/alerts";
 
-    @FindBy(id = "noID")
-    private WebElement rawMissElement;
+    private By rawMissElementLocator = By.id("noID");
+
 
     public ExceptionPage(WebDriver driver) {
         super(driver);
@@ -22,9 +22,9 @@ public class ExceptionPage extends BasePage {
         driver.get(URL);
     }
 
-    public WebElement assertElementVisible() {
-        return super.assertElementVisible(rawMissElement);
-    };
+    public WebElement getRawMissElement() {
+        return driver.findElement(rawMissElementLocator);
+    }
 
 
 

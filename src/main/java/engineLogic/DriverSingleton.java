@@ -5,25 +5,26 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DriverSingleton {
-    private static final ThreadLocal<WebDriver> driverThreadLocalLocal = new ThreadLocal<>();
+
+    private static final ThreadLocal<WebDriver> driverThreadLocal = new ThreadLocal<>();
 
     private DriverSingleton() {}
 
     public static WebDriver getDriver() {
-        if (driverThreadLocalLocal == null) {
+        if (driverThreadLocal.get() == null) {
             WebDriverManager.chromedriver().setup();
             WebDriver driver = new ChromeDriver();
             driver.manage().window().maximize();
-            driverThreadLocalLocal.set(driver);
+            driverThreadLocal.set(driver);
         }
-        return driverThreadLocalLocal.get();
+        return driverThreadLocal.get();
     }
 
     public static void quitDriver() {
-        WebDriver driver = driverThreadLocalLocal.get();
+        WebDriver driver = driverThreadLocal.get();
         if (driver != null) {
             driver.quit();
-            driverThreadLocalLocal.remove();
+            driverThreadLocal.remove();
         }
     }
 }

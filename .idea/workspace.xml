@@ -5,32 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6fa8642-0f89-41fd-8942-b7ac8dfeeb58" name="Changes" comment="realize POM, Add singleton, Add tests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/elements/BaseElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/elements/pageElements/ButtonElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/elements/pageElements/InputElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/demoQA/alertTests/AlertsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/DriverSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engineLogic/DriverSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/managers/PageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/managers/PageManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/AlertsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/demoQAPages/AlertsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BrowserWindowsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/demoQAPages/BrowserWindowsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ExceptionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/demoQAPages/ExceptionPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/FramesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/demoQAPages/FramesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/maven/archetype.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/archetype-resources/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/main/java/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/test/java/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AlertsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BrowserWindowsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/demoQA/BrowserWindowsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ExceptionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/demoQA/exceptionTests/ExceptionTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/FramesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/demoQA/frameTests/FramesTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/engineLogic/DriverSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/engineLogic/DriverSingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/demoQAPages/ExceptionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/demoQAPages/ExceptionPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/demoQAPages/FramesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/demoQAPages/FramesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/demoQA/exceptionTests/ExceptionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/demoQA/exceptionTests/ExceptionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/demoQA/frameTests/FramesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/demoQA/frameTests/FramesTests.java" afterDir="false" />
     </list>
-    <list id="04b0b962-6bab-495e-bcff-13955e327aaa" name="Changes by User" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ExceptionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/demoQA/exceptionTests/ExceptionTests.java" afterDir="false" />
-    </list>
+    <list id="04b0b962-6bab-495e-bcff-13955e327aaa" name="Changes by User" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,18 +45,6 @@
     &quot;accountId&quot;: &quot;30b635bd-f380-4ed0-98fb-708f93d6929b&quot;
   }
 }</component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/test/java/tests/demoQA/exceptionTests/ExceptionTests.java">
-      <ranges>
-        <range start1="0" end1="1" start2="0" end2="0" changelist="f6fa8642-0f89-41fd-8942-b7ac8dfeeb58" />
-        <range start1="2" end1="3" start2="1" end2="4" changelist="f6fa8642-0f89-41fd-8942-b7ac8dfeeb58" />
-        <range start1="5" end1="5" start2="6" end2="7" changelist="04b0b962-6bab-495e-bcff-13955e327aaa" />
-        <range start1="13" end1="19" start2="15" end2="17" changelist="04b0b962-6bab-495e-bcff-13955e327aaa" />
-        <range start1="24" end1="25" start2="22" end2="24" changelist="04b0b962-6bab-495e-bcff-13955e327aaa" />
-        <range start1="27" end1="27" start2="26" end2="27" changelist="f6fa8642-0f89-41fd-8942-b7ac8dfeeb58" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -96,11 +66,14 @@
     "TestNG.AlertsTest.testSimpleAlert.executor": "Run",
     "TestNG.AlertsTests.executor": "Run",
     "TestNG.BrowserWindowsTest.executor": "Run",
+    "TestNG.BrowserWindowsTest.testNewWindow.executor": "Run",
     "TestNG.BrowserWindowsTests.executor": "Run",
     "TestNG.ExceptionTests.executor": "Run",
+    "TestNG.ExceptionTests.testElementNotFoundException.executor": "Run",
     "TestNG.ExceptionTests.testHandleNoSuchElementException.executor": "Run",
     "TestNG.FramesTests.executor": "Run",
-    "git-widget-placeholder": "QAT-5893",
+    "TestNG.FramesTests.testFrames.executor": "Run",
+    "git-widget-placeholder": "#1 on QAT-5893",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -119,7 +92,7 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
+      <option name="PACKAGE_NAME" value="tests.demoQA.alertTests" />
       <option name="MAIN_CLASS_NAME" value="tests.demoQA.alertTests.AlertsTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
@@ -146,51 +119,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BrowserWindowsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BrowserWindowsTest.testNewWindow" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-api-internship" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.demoQA.alertTests.*" />
+          <option name="PATTERN" value="tests.demoQA.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
+      <option name="PACKAGE_NAME" value="tests.demoQA" />
       <option name="MAIN_CLASS_NAME" value="tests.demoQA.BrowserWindowsTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="testNewWindow" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExceptionTests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ExceptionTests.testElementNotFoundException" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-api-internship" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.demoQA.alertTests.*" />
+          <option name="PATTERN" value="tests.demoQA.exceptionTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
+      <option name="PACKAGE_NAME" value="tests.demoQA.exceptionTests" />
       <option name="MAIN_CLASS_NAME" value="tests.demoQA.exceptionTests.ExceptionTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="testElementNotFoundException" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FramesTests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FramesTests.testFrames" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="selenium-api-internship" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.demoQA.alertTests.*" />
+          <option name="PATTERN" value="tests.demoQA.frameTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
+      <option name="PACKAGE_NAME" value="tests.demoQA.frameTests" />
       <option name="MAIN_CLASS_NAME" value="tests.demoQA.frameTests.FramesTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="testFrames" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -199,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.FramesTests" />
         <item itemvalue="TestNG.AlertsTest.testSimpleAlert" />
         <item itemvalue="TestNG.AlertsTest" />
-        <item itemvalue="TestNG.ExceptionTests" />
-        <item itemvalue="TestNG.BrowserWindowsTest" />
+        <item itemvalue="TestNG.BrowserWindowsTest.testNewWindow" />
+        <item itemvalue="TestNG.FramesTests.testFrames" />
+        <item itemvalue="TestNG.ExceptionTests.testElementNotFoundException" />
       </list>
     </recent_temporary>
   </component>

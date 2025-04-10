@@ -10,18 +10,12 @@ import static org.testng.Assert.*;
 
 public class ExceptionTests extends BaseTest {
 
-    @Test
+    @Test(expectedExceptions = NoSuchElementException.class)
     public void testElementNotFoundException() {
         pages.exceptionPage().open();
 
-        pages.exceptionPage().assertElementVisible();
+        pages.exceptionPage().getRawMissElement();
     }
 
-    @Test
-    public void testSafeElementCheck() {
-        pages.exceptionPage().open();
-
-        pages.exceptionPage().assertElementVisible(pages.exceptionPage().assertElementVisible());
-    }
 }
 

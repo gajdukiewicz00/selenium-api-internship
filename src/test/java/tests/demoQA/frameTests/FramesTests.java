@@ -11,6 +11,6 @@ public class FramesTests extends BaseTest {
 
         pages.framesPage().assertFrameText();
 
-        pages.framesPage().getRawSampleHeading("Lol");
+        pages.framesPage().getRawSampleHeading("This is a sample page");
     }
 }

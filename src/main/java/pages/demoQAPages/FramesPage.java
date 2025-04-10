@@ -10,7 +10,7 @@ public class FramesPage extends BasePage {
 
     private final String URL = "https://demoqa.com/frames";
 
-    private final By rawSampleHeadninDuplicate = By.id("sampleHeading");
+    private final By rawSampleHeadingDuplicate = By.id("frame1");
 
     public FramesPage(WebDriver driver) {
         super(driver);
@@ -21,12 +21,13 @@ public class FramesPage extends BasePage {
     }
 
     public void assertFrameText() {
-        driver.findElement(rawSampleHeadninDuplicate).getText();
+        driver.findElement(rawSampleHeadingDuplicate).getText();
     }
 
     public void getRawSampleHeading(String string) {
-        FramesPage framesPageElement = (FramesPage) driver.switchTo().frame(driver.findElement(rawSampleHeadninDuplicate));
-        driver.findElement(rawSampleHeadninDuplicate).sendKeys(string);
+        driver.switchTo().frame(driver.findElement(rawSampleHeadingDuplicate));
+        driver.findElement(By.id("sampleHeading")).getText();
+        driver.switchTo().defaultContent();
     }
 
 }
