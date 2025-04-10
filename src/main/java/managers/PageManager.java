@@ -1,7 +1,10 @@
 package managers;
 
 import org.openqa.selenium.WebDriver;
-import pages.*;
+import pages.demoQaPages.AlertsPage;
+import pages.demoQaPages.BrowserWindowsPage;
+import pages.demoQaPages.ExceptionPage;
+import pages.demoQaPages.FramesPage;
 
 public class PageManager {
 

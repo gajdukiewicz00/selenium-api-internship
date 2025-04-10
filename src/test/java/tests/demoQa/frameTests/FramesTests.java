@@ -1,7 +1,7 @@
-package tests;
+package tests.demoQa.frameTests;
 
-import base.BaseTest;
 import org.testng.annotations.Test;
+import tests.BaseTest;
 
 import static org.testng.Assert.assertEquals;
 

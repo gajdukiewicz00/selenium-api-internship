@@ -1,5 +1,6 @@
-package base;
+package tests;
 
+import EngineLogic.DriverSingleton;
 import managers.PageManager;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;

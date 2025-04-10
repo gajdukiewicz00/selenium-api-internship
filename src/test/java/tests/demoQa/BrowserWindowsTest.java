@@ -1,8 +1,8 @@
-package tests;
+package tests.demoQa;
 
-import base.BaseTest;
-import base.DriverSingleton;
+import EngineLogic.DriverSingleton;
 import org.testng.annotations.Test;
+import tests.BaseTest;
 
 import static org.testng.Assert.assertTrue;
 

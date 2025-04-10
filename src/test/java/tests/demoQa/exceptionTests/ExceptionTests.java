@@ -1,8 +1,8 @@
-package tests;
+package tests.demoQa.exceptionTests;
 
-import base.BaseTest;
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.annotations.Test;
+import tests.BaseTest;
 
 import static org.testng.Assert.*;
 
