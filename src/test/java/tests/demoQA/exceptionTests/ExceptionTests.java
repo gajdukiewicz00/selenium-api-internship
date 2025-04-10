@@ -1,6 +1,7 @@
-package tests;
 
-import base.BaseTest;
+package tests.demoQA.exceptionTests;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.annotations.Test;
 
@@ -25,3 +26,4 @@ public class ExceptionTests extends BaseTest {
         assertFalse(pages.exceptionPage().isElementPresent("definitely-fake"));
     }
 }
+
